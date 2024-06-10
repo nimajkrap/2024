@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>해피버스데이</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <h1 id="selected-date"></h1>
 
-    <audio controls autoplay loop>
-        <source src="bgm.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-    <h2>노래를 재생시켜주세요.</h2>
+    <h2>상자를 GOLA 주세요!</h2>
+    <div class="box-container">
+        <div class="box" onclick="selectBox(1)">
+            <img src="box.png" alt="Box 1">
+        </div>
+        <div class="box" onclick="selectBox(2)">
+            <img src="box.png" alt="Box 2">
+        </div>
+        <div class="box" onclick="selectBox(3)">
+            <img src="box.png" alt="Box 3">
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
 </body>

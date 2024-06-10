@@ -1,3 +1,4 @@
+/* index 페이지 부분 */
 @font-face {
     font-family: 'Galmuri11';
     src: url('font/Galmuri11.ttf');
@@ -16,8 +17,6 @@ body {
         1px 1px 0 #000; 
     
 }
-
-body {}
 
 h1 {
     font-family: 'Galmuri11' ;
@@ -68,7 +67,7 @@ h1 {
 }
 
 .day:hover {
-    background-color: #8af129;
+    background-color: #ffd2d9;
 }
 
 button {
@@ -78,7 +77,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff7b00;
+    background-color: #ffd2d9;
 }
 
 .popup {
@@ -98,3 +97,6 @@ button:hover {
 h2 {
     font-size: 15px;
 }
+
+
+/* day 페이지 부분 */

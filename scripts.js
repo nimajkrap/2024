@@ -1,3 +1,4 @@
+/* index 페이지 */
 document.addEventListener('DOMContentLoaded', () => {
     const calendar = document.getElementById('calendar');
     const prevButton = document.getElementById('prev-month');
@@ -70,3 +71,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize the calendar with the first month
     renderCalendar(currentMonth);
 });
+
+/* day 페이지 */
+function selectBox(boxNumber) {
+    // boxNumber를 쿼리 파라미터로 추가하여 다음 페이지로 이동
+    window.location.href = `cake.html?box=${boxNumber}`;
+}
