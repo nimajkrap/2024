@@ -1,112 +1,36 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>친구 생일 축하 사이트</title>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Kirang+Haerang:400" rel="stylesheet">
-<style>
-  body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffffff;
-  }
-
-  #birthdayMessage {
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Kirang Haerang', cursive; 
-    color: white;
-    text-shadow: 
-      -1px -1px 0 #000,  
-       1px -1px 0 #000,
-      -1px  1px 0 #000,
-       1px  1px 0 #000;
-    
-
-  }
-
-  #birthdayMessage span:nth-child(1) {
-    color: red;
-  }
-  #birthdayMessage span:nth-child(2) {
-    color: orange;
-  }
-  #birthdayMessage span:nth-child(3) {
-    color: yellow;
-  }
-  #birthdayMessage span:nth-child(4) {
-    color: blueviolet;
-  }
-  #birthdayMessage span:nth-child(5) {
-    color: green;
-  }
-  #birthdayMessage span:nth-child(6) {
-    color: skyblue;
-  }
-  #birthdayMessage span:nth-child(7) {
-    color: rgb(0, 47, 255);
-  }
-  #birthdayMessage span:nth-child(8) {
-    color: moccasin;
-  }
-  #birthdayMessage span:nth-child(9) {
-    color: rgb(140, 0, 255);
-  }
-  #birthdayMessage span:nth-child(10) {
-    color: rgb(255, 0, 242);
-  }
-  #birthdayMessage span:nth-child(11) {
-    color: rgb(255, 217, 0);
-  }
-  #birthdayMessage span:nth-child(12) {
-    color: rgb(0, 255, 242);
-  }
-  #birthdayMessage span:nth-child(13) {
-    color: rgb(255, 60, 0);
-  }
-  #birthdayMessage span:nth-child(14) {
-    color: rgb(0, 255, 64);
-  }
-  #birthdayMessage span:nth-child(15) {
-    color: rgb(85, 83, 216);
-  }
-
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>해피버스데이</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <div id="birthdayMessage">
-        <h1>
-          <span>승</span>
-          <span>민</span>
-          <span>이</span>
-          <span>의</span>
-          <span> </span>
-          <span>생</span>
-          <span>일</span>
-          <span>을</span>
-          <span> </span>
-          <span>축</span>
-          <span>하</span>
-          <span>합</span>
-          <span>니</span>
-          <span>다</span>
-          <span>!</span>
-        </h1>
-        <p>생일선물을 가지기 위한 고군분투를 시작하지.</p>
-        </div>
+    <h1>♧ 콩그레출레이션 ♧</h1>
+    <div id="calendar-container">
+        <button id="prev-month"><</button>
+        <div id="calendar"></div>
+        <button id="next-month">></button>
     </div>
-    <script src="script.js"></script>
-      </div>
+    <script>
+        window.onload = function() {
+            setTimeout(showPopup, 1000);
+        };
 
-<script>
-</script>
+        function showPopup() {
+            var popup = document.createElement('div');
+            popup.className = 'popup';
+            popup.textContent = '♡ 당신의 생일을 선택하세요 ♡';
 
+            document.body.appendChild(popup);
+
+            setTimeout(function() {
+                document.body.removeChild(popup);
+            }, 5000);
+        }
+
+    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
