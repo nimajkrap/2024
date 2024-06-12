@@ -16,9 +16,9 @@
     <h2>노래를 재생시켜주세요.</h2>
     
     <div id="cake-container"></div>
+    <button id="next-button">선물받기</button>
 
     <script>
-        // 쿼리 파라미터에서 box 번호를 가져와서 케이크 이미지를 표시
         function getQueryParams() {
             const params = new URLSearchParams(window.location.search);
             return params.get('box');
@@ -33,9 +33,12 @@
 
             cakeContainer.appendChild(cakeImage);
         } else {
-            // box 번호가 없으면 돌아가기 링크를 표시
             const cakeContainer = document.getElementById('cake-container');
             cakeContainer.innerHTML = '<p>잘못된 접근입니다. <a href="day.html">돌아가기</a></p>';
+        }
+
+        document.getElementById('next-button').onclick = function() {
+            window.location.href = 'gift.html';
         }
     </script>
 </body>

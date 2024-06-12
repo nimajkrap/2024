@@ -27,6 +27,15 @@ body {
     font-size: 25px;
 }
 
+#next-button {
+    font-family: 'Galmuri11' ;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
 button {
     margin: 0 10px;
     padding: 10px;
@@ -65,5 +74,12 @@ h3 {
 
 #cake-container img {
     width: 300px;
+    margin-top: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 }

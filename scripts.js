@@ -77,3 +77,5 @@ function selectBox(boxNumber) {
     // boxNumber를 쿼리 파라미터로 추가하여 다음 페이지로 이동
     window.location.href = `cake.html?box=${boxNumber}`;
 }
+
+/* gift 페이지 */
